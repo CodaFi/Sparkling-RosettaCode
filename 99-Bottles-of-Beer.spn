@@ -1,0 +1,8 @@
+var bottles = 99;
+
+do {
+    print(bottles, " bottles of beer on the wall");
+    print(bottles, " bottles of beer");
+    print("Take one down, pass it around");
+    print(--bottles, " bottles of beer on the wall\n");
+} while bottles > 0;

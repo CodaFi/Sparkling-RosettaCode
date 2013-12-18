@@ -1,0 +1,21 @@
+const MAX_DOORS = 100;
+
+var doors = array();
+var i, j;
+
+for i = 1; i <= MAX_DOORS; i++ {
+    doors[i] = false;
+}
+
+for i = 1; i <= MAX_DOORS; i++ {
+    for j = i; j <= MAX_DOORS; j+= i {
+        doors[j] = !doors[j];
+    }
+}
+
+for i = 1; i <= MAX_DOORS; i++ {
+    if doors[i] {
+        print("Door ", i, " is open");
+    }
+}
+

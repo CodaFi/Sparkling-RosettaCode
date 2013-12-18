@@ -1,0 +1,9 @@
+function concat(arr, other) {
+    for var i = (sizeof arr), j = 0; j < (sizeof other); ++i, ++j {
+      arr[i] = other[j]
+    }
+}
+
+var first = array(0, 1, 2);
+var second = array(3, 4, 5);
+print(concat(first, second));
